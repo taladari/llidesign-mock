@@ -1,0 +1,32 @@
+.anim {
+    position: relative;
+    /* transition: background-image 1s linear; */
+}
+
+.arrow, .play-pause {
+    cursor: pointer;
+    color: #fff;
+}
+
+.arrow {
+    font-size: 80px;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 40px;
+    top: 45%;
+}
+
+.arrow-left{
+    position: absolute;
+    left: 40px;
+    top: 45%;
+}
+
+.play-pause {
+    font-size: 40px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
