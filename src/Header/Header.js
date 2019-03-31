@@ -21,12 +21,13 @@ class Header extends Component {
     render(){
 
         const menuOpac = this.state.showMenu ? 0.8 : 0;
+        const menuVisib = this.state.showMenu ? "visible" : "hidden";
         const menuZIndex = this.state.showMenu ? 0 : -1;
         const menuIcon = this.state.showMenu ? "times" : "bars";
 
         return (
             <div className="header">
-                <div className="menu" style={{opacity: menuOpac, zIndex: menuZIndex}}>
+                <div className="menu" style={{opacity: menuOpac, visibility: menuVisib, zIndex: menuZIndex}}>
                     <ul className="menu-items">
                         <a href="#" className="menu-item"><li>our services</li></a>
                         <a href="#" className="menu-item"><li>about us</li></a>

@@ -53,7 +53,9 @@
       background-color: #fff;
       width: 100vw;
       height:100vh;
-      transition: opacity .5s ease-out;
+      visibility: hidden;
+      transition: all .5s ease;
+      /* transition: opacity .5s ease-out; */
   }
 
   .menu-items {
@@ -90,3 +92,15 @@
   .menu-item, .menu-item:link, .menu-item:visited {     
       text-decoration: none;
   }
+
+  @keyframes moveInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}

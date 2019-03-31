@@ -13,14 +13,14 @@ class ImageCarousel extends Component {
 
     constructor(props){
         super(props);
-        const intervalId = setInterval(() => {
-                                this.updateNextImage(1);
-                            }, 5000);
+        // const intervalId = setInterval(() => {
+        //                         this.updateNextImage(1);
+        //                     }, 5000);
         this.state = {
-            playSlideshow: true,
+            playSlideshow: false,
             images: [firstImg, secondImg, thirdImg, fourthImg, fifthImg, sixthImg, seventhImg],
             currentImg: 0,
-            intervalId: intervalId
+            // intervalId: intervalId
         };
 
         this.handleArrowClick = this.handleArrowClick.bind(this);
@@ -90,17 +90,17 @@ class ImageCarousel extends Component {
         const playPause = this.state.playSlideshow ? "pause" : "play";
 
         return (
-        <div className="anim" style={style}>
-            <div className="arrow arrow-right" onClick={this.handleClickRight}>
-                <i className="fas fa-chevron-right"></i>
+            <div className="anim" style={style}>
+                <div className="arrow arrow-right" onClick={this.handleClickRight}>
+                    <i className="fas fa-chevron-right"></i>
+                </div>
+                <div className="arrow arrow-left" onClick={this.handleClickLeft}>
+                    <i className="fas fa-chevron-left"></i>
+                </div>
+                <div className="play play-pause" onClick={this.handleClickPlayPause}>
+                    <i className={"far fa-" + playPause + "-circle"}></i>
+                </div>
             </div>
-            <div className="arrow arrow-left" onClick={this.handleClickLeft}>
-                <i className="fas fa-chevron-left"></i>
-            </div>
-            <div className="play play-pause" onClick={this.handleClickPlayPause}>
-                <i className={"far fa-" + playPause + "-circle"}></i>
-            </div>
-        </div>
         );
     };
 
