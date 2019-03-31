@@ -13,14 +13,14 @@ class ImageCarousel extends Component {
 
     constructor(props){
         super(props);
-        // const intervalId = setInterval(() => {
-        //                         this.updateNextImage(1);
-        //                     }, 5000);
+        const intervalId = setInterval(() => {
+                                this.updateNextImage(1);
+                            }, 5000);
         this.state = {
-            playSlideshow: false,
+            playSlideshow: true,
             images: [firstImg, secondImg, thirdImg, fourthImg, fifthImg, sixthImg, seventhImg],
             currentImg: 0,
-            // intervalId: intervalId
+            intervalId: intervalId
         };
 
         this.handleArrowClick = this.handleArrowClick.bind(this);

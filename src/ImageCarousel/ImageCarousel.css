@@ -1,6 +1,6 @@
 .anim {
     position: relative;
-    transition: background-image 1s linear;
+    transition: background-image .5s linear;
 }
 
 .arrow, .play-pause {
