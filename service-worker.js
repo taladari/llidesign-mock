@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/llidesign-mock/precache-manifest.bea176d9994a9baee8732f9d135552e4.js"
+  "/llidesign-mock/precache-manifest.edbb8a9960c4b91c6220a69df9dfb881.js"
 );
 
 workbox.clientsClaim();
